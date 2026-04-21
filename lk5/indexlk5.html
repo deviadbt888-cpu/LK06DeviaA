@@ -112,7 +112,6 @@
         <main action="#" method="post">
            <p>Email: deviadbt888@gmail.com</p>
            <p>No HP: 089639030307</p>
-           <p>YouTube: <a href="https://www.youtube.com/@deviaamandc" target="_blank" style="color: #ff66b2; text-decoration: none;">@deviaamandc</a></p>
 
 <section id="pendaftaran" style="margin-top: 50px;">
     <h2 class="section-title">Form Pendaftaran</h2>
@@ -149,10 +148,6 @@
                     <option value="GitHub">GitHub</option>
                 </select>
             </div>
-            <div class="form-group" style="margin-bottom: 20px;">
-                <label for="pesan" style="display: block; margin-bottom: 8px; font-weight: bold; font-size: 1.1rem; color: #444;">Pesan:</label>
-                <textarea id="pesan" rows="4" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;" placeholder="Tulis Pesan Anda..." required></textarea>
-            </div>
             <button type="submit" id="btnSubmit" style="width: 100%; padding: 15px; background-color: pink; color: white; border: none; border-radius: 8px; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: background 0.3s; margin-top: 10px;">Kirim</button>
         </form>
     </article>
@@ -165,7 +160,6 @@
             <p style="margin-bottom: 8px;"><strong>No HP:</strong> <span id="resHP"></span></p>
             <p style="margin-bottom: 8px;"><strong>Kategori:</strong> <span id="resKategori"></span></p>
             <p style="margin-bottom: 8px;"><strong>Social Media:</strong> <span id="resSocialMedia"></span></p>
-            <p style="margin-bottom: 8px;"><strong>Pesan:</strong> <span id="resPesan"></span></p>
         </article>
     </div>
 </section>
@@ -188,7 +182,6 @@
         const hp = document.getElementById('hp').value;
         const kategori = document.getElementById('kategori').value;
         const socialMedia = document.getElementById('socialMedia').value;
-        const pesan = document.getElementById('pesan').value;
 
         // 3. Menampilkan Alert
         alert('Pesan berhasil dikirim!');
@@ -199,7 +192,6 @@
         document.getElementById('resHP').innerText = hp;
         document.getElementById('resKategori').innerText = kategori;
         document.getElementById('resSocialMedia').innerText = socialMedia;
-        document.getElementById('resPesan').innerText = pesan;
 
         // 5. Memunculkan kontainer tampilan hasil
         document.getElementById('resultContainer').style.display = 'block';

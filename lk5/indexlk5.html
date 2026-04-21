@@ -130,6 +130,10 @@
                 <input type="tel" id="hp" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;" placeholder="08..." required>
             </div>
             <div class="form-group" style="margin-bottom: 20px;">
+                <label for="prodi" style="display: block; margin-bottom: 8px; font-weight: bold; font-size: 1.1rem; color: #444;">Prodi:</label>
+                <input type="text" id="prodi" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;" placeholder="Contoh: Informatika" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
                 <label for="kategori" style="display: block; margin-bottom: 8px; font-weight: bold; font-size: 1.1rem; color: #444;">Kategori:</label>
                 <select id="kategori" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;" required>
                     <option value="">-- Pilih --</option>
@@ -158,6 +162,7 @@
             <p style="margin-bottom: 8px;"><strong>Nama:</strong> <span id="resNama"></span></p>
             <p style="margin-bottom: 8px;"><strong>Email:</strong> <span id="resEmail"></span></p>
             <p style="margin-bottom: 8px;"><strong>No HP:</strong> <span id="resHP"></span></p>
+            <p style="margin-bottom: 8px;"><strong>Prodi:</strong> <span id="resProdi"></span></p>
             <p style="margin-bottom: 8px;"><strong>Kategori:</strong> <span id="resKategori"></span></p>
             <p style="margin-bottom: 8px;"><strong>Social Media:</strong> <span id="resSocialMedia"></span></p>
         </article>
@@ -180,6 +185,7 @@
         const nama = document.getElementById('nama').value;
         const email = document.getElementById('email').value;
         const hp = document.getElementById('hp').value;
+        const prodi = document.getElementById('prodi').value;
         const kategori = document.getElementById('kategori').value;
         const socialMedia = document.getElementById('socialMedia').value;
 
@@ -190,6 +196,7 @@
         document.getElementById('resNama').innerText = nama;
         document.getElementById('resEmail').innerText = email;
         document.getElementById('resHP').innerText = hp;
+        document.getElementById('resProdi').innerText = prodi;
         document.getElementById('resKategori').innerText = kategori;
         document.getElementById('resSocialMedia').innerText = socialMedia;
 
